@@ -4,14 +4,13 @@ body {
   font: 18px Montserrat, sans-serif;
 
 }
-h2 {
-  color:white;
-}
-h3 {
-  color:white;
-}
+
 a {
-  color:white;
+  color: white;
+}
+
+.color-white {
+  color: white;
 }
 div {
   background-color: #2272f4;
@@ -20,6 +19,8 @@ div {
 #main {
   width:80%;
 }
+
+
 .fake-img{
   width:250px;
   height:250px;
