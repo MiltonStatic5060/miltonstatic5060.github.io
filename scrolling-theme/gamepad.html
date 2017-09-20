@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MHS Robotics - Team Static 5060</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="https://miltonstatic5060.github.io/">Milton Static 5060</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#"></a>
+            </li>
+            <li class="nav-item bg-danger" style="border-radius:5px;">
+              <a class="nav-link js-scroll-trigger" style="color:white;border-radius:5px;" href="/">Back to Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-primary text-white" id="MotorsServo">
+      <div class="container text-center">
+        <h1>Motor and Servo API</h1>
+        <p class="lead">Tetrix Motor and HS-485HB Servo</p>
+      </div>
+    </header>
+    <br/>
+    <div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mx-auto">
+            <img src="static/images/TetrixMotor.jpg" class="img-thumbnail">
+            <button data-toggle="collapse" data-target="#MotorDisplay" class="btn btn-primary btn-rounded btn-lg">Show Function Usage</button>
+            <div id="MotorDisplay" class="collapse">
+              <hr/ style="border:1px solid black">
+              <p>
+                <strong>Dc Motor is powered -1.00 to +1.00<br/>set to 0 to stop<br/>
+                </strong>
+              </p>
+              <hr/ style="border:1px solid black">
+            </div>
+          </div>
+          <div class="col-lg-4 mx-auto">
+            <img src="static/images/HSServo.jpg" class="img-thumbnail">
+            <button data-toggle="collapse" data-target="#ServoDisplay" class="btn btn-primary btn-rounded btn-lg">Show Function Usage</button>
+            <div id="ServoDisplay" class="collapse">
+              <hr/ style="border:1px solid black">
+              <p>
+                <strong></strong>
+              </p>
+              <hr/ style="border:1px solid black">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br/>
+
+    <header class="bg-primary text-white" id="GameController">
+      <div class="container text-center">
+        <h1>Game Controller API</h1>
+        <p class="lead">Logitech F310</p>
+      </div>
+    </header>
+    <br/>
+    <div id="FrontGamepad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mx-auto">
+            <img src="static/images/FrontGamepad.jpg" class="img-thumbnail">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mx-auto">
+            <button data-toggle="collapse" data-target="#FrontG1" class="btn btn-primary btn-rounded btn-lg">Show Analog Sticks</button>
+            <div id="FrontG1" class="collapse">
+              <hr/ style="border:1px solid black">
+              <p>
+                <em><strong>Use gamepad1 or gamepad2</strong></em><br/>
+                <br/>
+                <strong>up = -1; down = +1; returns decimal<br/>
+                left = -1; right = +1; returns decimal<br/></strong>
+                
+                gamepad1.left_stick_y<br/>
+                gamepad1.left_stick_x<br/>
+                gamepad1.right_stick_y<br/>
+                gamepad1.right_stick_x<br/>
+                <br/>
+                <strong>true/false</strong><br/>
+                gamepad1.left_stick_button<br/>
+                gamepad1.right_stick_button<br/>
+              </p>
+              <hr/ style="border:1px solid black">
+            </div>
+          </div>
+          <div class="col-lg-4 mx-auto">
+            <button data-toggle="collapse" data-target="#FrontG2" class="btn btn-primary btn-rounded btn-lg">Show Front Face Buttons</button>
+            <div id="FrontG2" class="collapse">
+              <hr/ style="border:1px solid black">
+              <p>
+                <em><strong>Use gamepad1 or gamepad2</strong></em><br/>
+                <br/>
+                <strong>Pressed gives true<br/>
+                Unpressed gives false<br/></strong>
+                <br/>
+                gamepad1.dpad_up<br/>
+                gamepad1.dpad_down<br/>
+                gamepad1.dpad_left<br/>
+                gamepad1.dpad_right<br/>
+                gamepad1.back<br/>
+                gamepad1.guide<br/>
+                gamepad1.start<br/>
+                gamepad1.a <br/>
+                gamepad1.b <br/>
+                gamepad1.x <br/>
+                gamepad1.y <br/>
+              </p>
+              <hr/ style="border:1px solid black">
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <br/>
+    <div id="BackGamepad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mx-auto">
+            <img src="static/images/BackGamepad.jpg" class="img-thumbnail">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <button data-toggle="collapse" data-target="#BackG1" class="btn btn-primary btn-rounded btn-lg">Show Back Buttons</button>
+            <div id="BackG1" class="collapse">
+              <hr/ style="border:1px solid black">
+              <p>
+                <em><strong>Use gamepad1 or gamepad2</strong></em><br/>
+                <br/>
+                <strong>up = -1; down = +1; returns decimal<br/>
+                left = -1; right = +1; returns decimal<br/></strong>
+                
+                gamepad1.left_stick_y<br/>
+                gamepad1.left_stick_x<br/>
+                gamepad1.right_stick_y<br/>
+                gamepad1.right_stick_x<br/>
+                <br/>
+                <strong>true/false</strong><br/>
+                gamepad1.left_stick_button<br/>
+                gamepad1.right_stick_button<br/>
+              </p>
+              <hr/ style="border:1px solid black">
+            </div>
+          </div>
+              
+        </div>
+      </div>
+    </div>
+    <br/>
+    
+
+    <!--for later
+      <div class="row">
+              <div class="col-sm-6">
+                <img class="img-thumbnail" src="./static/images/scientific-method-meme-updated-1.png"/>
+              </div>
+              <div class="col-sm-6">
+                <img class="img-thumbnail" src="./static/images/whycode.jpg"/>
+              </div>
+            </div>  
+    -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Ryan Au 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+    <style>
+      nav ul li {
+        margin: 2px;
+      }
+      @media (min-width: 992px){
+        nav ul li {
+          padding-left: 5px;
+        }
+      }
+    </style>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+
+  </body>
+
+</html>
