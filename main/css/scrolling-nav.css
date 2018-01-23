@@ -18,7 +18,16 @@ header {
     padding-left:50px;
   }
 }
-
+#home {
+  /* background-image: url("https://lh3.googleusercontent.com/-JIBUoyhVp4M/WdrE_hTcqjI/AAAAAAAAl7E/kBKl8rozim0iTVzel8n2cisqRB6GkgjAQCLcBGAs/s1280-fcrop64=1,35336666d56fada1/Screenshot%2Bfrom%2B2017-10-08%2B20-38-03.png"); 
+  background-position: left top; 
+  background-repeat: no-repeat; */
+  
+}
 section {
-  padding: 150px 0;
+  padding: 50px 0;
+}
+
+#main-header {
+  /* background-color: rgba(0,0,0,0.3); */
 }
