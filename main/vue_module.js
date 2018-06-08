@@ -19,7 +19,9 @@ var vue_nav_menu = new Vue({
         buttons: [
             {name:"Members",link:"./members.html",classes:"nav-item bg-info"},
             {name:"Cheat Sheet", link:"./gamepad.html", classes:"nav-item bg-warning"},
-            {name:"Tutorial", link:"/5060-tutorials", classes:"nav-item bg-success"}
+            {name:"Javadoc", link:"https://ftctechnh.github.io/ftc_app/doc/javadoc/index.html", classes:"nav-item bg-success"},
+            {name:"Repos", link:"./repositories.html", classes:"nav-item bg-success"}
+            // {name:"Tutorial", link:"/5060-tutorials", classes:"nav-item bg-success"}
         ],
         homeButton: {name:"Back Home",link:"./index.html",classes:"nav-item bg-danger"}
     }
