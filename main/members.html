@@ -16,6 +16,12 @@
     <!-- Custom styles for this template -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
 
+    <!--Vue JS development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!--Vue JS production version, optimized for size and speed -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+
   </head>
 
   <body id="page-top">
@@ -28,7 +34,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto" id="vue_nav_menu">
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#builders">Builders</a>
             </li>
@@ -38,12 +44,17 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#repos">Repositories</a>
             </li>
-            <li class="nav-item bg-warning" style="border-radius:5px;">
+
+            <!-- Vue based nav buttons -->
+            <vue-nav-button v-for="button in buttons" v-bind:name="button.name" v-bind:link="button.link" v-bind:classes="button.classes"></vue-nav-button>
+            <vue-nav-button v-if="true" v-bind:name="homeButton.name" v-bind:link="homeButton.link" v-bind:classes="homeButton.classes"></vue-nav-button>
+
+            <!-- <li class="nav-item bg-warning" style="border-radius:5px;">
               <a class="nav-link js-scroll-trigger" style="color:white;border-radius:5px;" href="./gamepad.html">Robot Cheat Sheet</a>
             </li>
             <li class="nav-item bg-danger" style="border-radius:5px;">
               <a class="nav-link js-scroll-trigger" style="color:white;border-radius:5px;" href="/">Back to Home</a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -221,6 +232,7 @@
 
     <!-- Custom JavaScript for this theme -->
     <script src="js/scrolling-nav.js"></script>
+    <script src="vue_module.js"></script>
 
   </body>
 

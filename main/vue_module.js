@@ -18,8 +18,10 @@ var vue_nav_menu = new Vue({
     data: {
         buttons: [
             {name:"Members",link:"./members.html",classes:"nav-item bg-info"},
-            {name:"Robot Cheat Sheet", link:"./gamepad.html", classes:"nav-item bg-warning"},
-            {name:"Programming Tutorial", link:"/5060-tutorials", classes:"nav-item bg-success"}
-        ]
+            {name:"Cheat Sheet", link:"./gamepad.html", classes:"nav-item bg-warning"},
+            {name:"Tutorial", link:"/5060-tutorials", classes:"nav-item bg-success"}
+        ],
+        homeButton: {name:"Back Home",link:"./index.html",classes:"nav-item bg-danger"}
     }
+    
 });

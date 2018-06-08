@@ -51,7 +51,7 @@
             
             <!-- Vue based nav buttons -->
             <vue-nav-button v-for="button in buttons" v-bind:name="button.name" v-bind:link="button.link" v-bind:classes="button.classes"></vue-nav-button>
-            <!-- <vue-nav-button v-bind:name="'Back to Home'" v-bind:link="'./index.html'" v-bind:classes="nav-item bg-danger"></vue-nav-button> -->
+            <vue-nav-button v-if="false" v-bind:name="homeButton.name" v-bind:link="homeButton.link" v-bind:classes="homeButton.classes"></vue-nav-button>
             
             <!-- Old buttons -->
             <!-- <li class="nav-item bg-info" style="border-radius:5px;">
